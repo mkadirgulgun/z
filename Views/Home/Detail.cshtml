@@ -1,0 +1,348 @@
+﻿@model Post
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f8fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    .post-container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .post {
+        padding: 20px;
+    }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .user-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .user-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-full-name {
+        font-weight: bold;
+        color: #000000;
+        text-decoration: none;
+    }
+
+        .user-full-name:hover {
+            text-decoration: underline;
+        }
+
+    .user-name {
+        color: #657786;
+    }
+
+    .post-content {
+        margin-top: 10px;
+    }
+
+    .post-date {
+        color: #657786;
+        font-size: 12px;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .comments {
+        margin-top: 20px;
+    }
+
+    .comment {
+        padding: 10px;
+        border-top: 1px solid #e1e8ed;
+    }
+
+    .comment-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 5px;
+    }
+
+    .comment-user-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .comment-user-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .comment-account-name {
+        font-weight: bold;
+        color: #000000;
+        text-decoration: none;
+    }
+
+        .comment-account-name:hover {
+            text-decoration: underline;
+        }
+
+    .comment-user {
+        color: #657786;
+    }
+
+    .comment-date {
+        color: #657786;
+    }
+
+    .comment-content {
+        margin-left: 50px;
+    }
+
+        .comment-content p {
+            margin: 0;
+        }
+
+    .comment-form {
+        margin-top: 20px;
+        border-top: 1px solid #e1e8ed;
+        padding-top: 10px;
+    }
+
+        .comment-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .comment-form input[type="text"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccd6dd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .comment-form button {
+            padding: 10px;
+            background-color: #1da1f2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+            .comment-form button:hover {
+                background-color: #0d95e8;
+            }
+
+    .post-img {
+        margin-top: 10px;
+        max-width: 100%;
+        height: auto;
+        max-height: 300px;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .like-section {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .like-icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+    .like-count {
+        font-size: 14px;
+        color: #657786;
+    }
+
+    .post-options {
+        position: relative;
+        margin-left: auto;
+    }
+
+    .post-options-btn {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #657786;
+    }
+
+    .post-options-menu {
+        display: none;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background-color: #ffffff;
+        border: 1px solid #e1e8ed;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+        .post-options-menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+
+            .post-options-menu a:hover {
+                background-color: #f5f8fa;
+            }
+
+    .comment-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 5px;
+    }
+
+    .comment-user-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .comment-user-details {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .comment-account-name {
+        font-weight: bold;
+    }
+
+    .comment-user, .comment-date {
+        color: #657786;
+    }
+
+    .comment p {
+        margin: 0;
+        padding-left: 40px;
+    }
+
+    .comment-options {
+        position: relative;
+        margin-left: auto;
+    }
+
+    .comment-options-btn {
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: #657786;
+    }
+
+    .comment-options-menu {
+        display: none;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background-color: #ffffff;
+        border: 1px solid #e1e8ed;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+        .comment-options-menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+
+            .comment-options-menu a:hover {
+                background-color: #f5f8fa;
+            }
+
+</style>
+
+<div class="post-container">
+    <div class="post">
+
+        <div class="user-info">
+           
+            @if (Model.ProfileImg == null)
+            {
+                <img src="/uploads/noname-profile.png" alt="Kullanıcı Resmi" class="user-img">
+            }
+            else
+            {
+                <img src="/uploads/@Model.ProfileImg" alt="Kullanıcı Resmi" class="user-img">
+
+            }
+            
+            <div class="user-details">
+                <a href="/profil/@Model.UserName" class="user-full-name">@Model.Name</a>
+                @* <span class="user-full-name">@Model.Name</span> *@
+                <span class="user-name">@@@Model.UserName</span>
+            </div>
+            <div class="post-options">
+                <button class="post-options-btn" onclick="toggleOptionsMenu(this)">⋮</button>
+                <div class="post-options-menu">
+                    @if (Model.UserId == ViewBag.Control)
+                    {
+                        <a href="@Url.Action("EditPost", "Admin", new{Id = Model.Id})">Düzenle</a>
+                        <a href="@Url.Action("DeletePost", "Admin", new{Id = Model.Id})" onclick="return confirm('Silmek istediğinize emin misiniz?');">Sil</a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("ReportPost", "Admin", new{Id = Model.Id})">Şikayet Et</a>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="post-content">
+            <p>@Model.Detail</p>
+            @if (!string.IsNullOrEmpty(Model.ImgUrl))
+            {
+                <img src="/uploads/@Model.ImgUrl" alt="Paylaşılan Resim" class="post-img">
+            }
+            
+        </div>
+        <div class="post-date">
+            <span>@Model.CreatedDate</span>
+        </div>
+        
+        @Html.Partial("Partials/_Comments", Model)
+    </div>
+</div>
+
+<script>
+    function toggleOptionsMenu(button) {
+        let menu = button.nextElementSibling;
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    document.addEventListener('click', function (event) {
+        let isClickInside = event.target.closest('.post-options');
+        if (!isClickInside) {
+            document.querySelectorAll('.post-options-menu').forEach(menu => menu.style.display = 'none');
+        }
+    });
+</script>

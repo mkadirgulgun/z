@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "_LoginLayout";
+}
+
+
+<div class="alert @ViewBag.MessageCssClass" role="alert">
+    @ViewBag.Message
+
+    @if(ViewBag.Login != null)
+    {
+        <p>Giriş yapmak için <a href="@Url.Action("Index", "Login")">tıklayın</a></p>
+    }
+</div>

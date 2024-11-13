@@ -1,0 +1,15 @@
+﻿@model LoginRequestModel
+
+@using (Html.BeginForm("Authenticate", "Login", FormMethod.Post, new { role = "form", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div>
+        @Html.TextBoxFor(m => m.Email, new { @id = "exampleInputUsername", @required = "required", @placeholder = "Enter User ID", @autocomplete = "off" })
+    </div>
+
+    <div>
+        @Html.TextBoxFor(m => m.Password, new { @id = "exampleInputPassword", @required = "required", @placeholder = "Enter Password", @autocomplete = "off", @type = "password" })
+    </div>
+
+    <button type="submit">Login</button>
+}

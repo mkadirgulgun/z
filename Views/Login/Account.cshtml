@@ -1,0 +1,80 @@
+﻿@{
+    Layout = "_LoginLayout";
+}
+<style>
+    /* Genel Stil Ayarları */
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #f6f5f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    form {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 400px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+        input[type="text"]:disabled,
+        input[type="email"]:disabled {
+            background-color: #f0f0f0;
+        }
+
+    a.btn {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+        a.btn:hover {
+            background-color: #0056b3;
+        }
+
+    p {
+        margin: 0;
+    }
+
+</style>
+
+@model Login
+<form method="post">
+
+    <label for="UserName">Kullanıcı Adı</label>
+    <p><input type="text" disabled value="@Model.UserName" /><p>
+        <label for="Email">Email</label>
+    <p><input type="email" disabled value="@Model.Email" /><p>
+        <input type="hidden" value="@Model.Id" />
+        <a href="/Login/ConfirmAccount/@Model.Id" class="btn btn-primary">Onayla</a>
+</form>

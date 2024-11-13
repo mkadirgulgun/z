@@ -1,0 +1,97 @@
+﻿@model Post
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f8fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    .edit-post-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #000;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #000;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccd6dd;
+        border-radius: 4px;
+        font-size: 14px;
+        resize: vertical;
+    }
+
+    input[type="file"] {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .current-img {
+        margin-top: 10px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .submit-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #1da1f2;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+    }
+
+        .submit-btn:hover {
+            background-color: #0d95e8;
+        }
+
+</style>
+
+<div class="edit-post-container">
+    <h1>Gönderiyi Düzenle</h1>
+    <form action="/Admin/EditPost" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="Id" value="@Model.Id">
+        <div class="form-group">
+            <label for="Detail">Gönderi İçeriği:</label>
+            <textarea id="Detail" name="Detail" required>@Model.Detail</textarea>
+        </div>
+        <div class="form-group">
+            <label for="ImgUrl">Resim Ekle:</label>
+            <input type="file" name="Image" @* multiple *@ accept="image/png, image/jpeg" />
+
+            <input type="hidden" name="ImgUrl" value="@Model.ImgUrl" />
+            @if (!string.IsNullOrEmpty(Model.ImgUrl))
+            {
+                <img src="/uploads/@Model.ImgUrl" alt="Gönderi Resmi" class="current-img">
+            }
+        </div>
+        <button type="submit" class="submit-btn">Güncelle</button>
+    </form>
+</div>

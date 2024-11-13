@@ -1,0 +1,135 @@
+﻿@model Post
+<style>
+    /* Genel Ayarlar */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .profile-edit-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333333;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        .form-group input[type="file"] {
+            display: block;
+            width: 100%;
+        }
+
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccd6dd;
+            border-radius: 4px;
+        }
+
+    .preview {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .profile-img, .cover-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        background-color: #1da1f2;
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background-color: #0d95e8;
+        }
+
+</style>
+
+
+<div class="container">
+    <div class="profile-edit-container">
+        <h2>Profil Düzenleme</h2>
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="profileImg">Profil Fotoğrafı</label>
+                <input type="file" name="ImageProfile" @* multiple *@ accept="image/png, image/jpeg" />
+
+                <input type="hidden" name="ProfileImg" value="@Model.ProfileImg" />
+                @if (!string.IsNullOrEmpty(Model.ProfileImg))
+                {
+                    
+                <div class="preview">
+                    <img src="/uploads/@Model.ProfileImg" alt="Profil Fotoğrafı" class="profile-img" style="height:300px">
+                </div>
+                }
+            </div>
+
+            <div class="form-group">
+                <label for="coverImg">Kapak Fotoğrafı</label>
+
+                <input type="file" name="Image" @* multiple *@ accept="image/png, image/jpeg" />
+
+                <input type="hidden" name="CoverImg" value="@Model.CoverImg" />
+                @if (!string.IsNullOrEmpty(Model.CoverImg))
+                {
+                    <div class="preview">
+                        <img src="/uploads/@Model.CoverImg" alt="Kapak Fotoğrafı" class="cover-img" style="height:300px">
+                    </div>
+                }
+
+
+               
+            </div>
+
+            <div class="form-group">
+                <label for="name">İsim</label>
+                <input type="text"  name="Name" value="@Model.Name" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Kaydet</button>
+            </div>
+            <div class="form-group">
+                <a href="@Url.Action("ChangePassword", "Home")">Sifre Degistir</a>
+            </div>
+        </form>
+    </div>
+</div>

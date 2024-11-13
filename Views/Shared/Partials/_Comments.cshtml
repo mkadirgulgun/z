@@ -1,0 +1,201 @@
+﻿@model Post
+<style>
+    /* Yorum Ekleme Formu Stilleri */
+    .comment-form {
+        margin: 20px 0;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+        .comment-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .comment-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .comment-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+            .comment-form button:hover {
+                background-color: #45a049;
+            }
+
+    /* Yorumların Stilleri */
+    .comments {
+        margin-top: 20px;
+    }
+
+    .comment {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+    }
+
+        .comment:last-of-type {
+            border-bottom: none;
+        }
+
+    .comment-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .comment-user-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+
+    .comment-user-info {
+        flex: 1;
+    }
+
+    .comment-account-name {
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .comment-user {
+        color: #666;
+        font-size: 14px;
+    }
+
+    .comment-date {
+        color: #999;
+        font-size: 12px;
+    }
+
+    .comment-options {
+        position: relative;
+    }
+
+    .comment-options-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        color: #666;
+    }
+
+    .comment-options-menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+        .comment-options-menu a {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+            .comment-options-menu a:hover {
+                background-color: #f1f1f1;
+            }
+
+    /* Yorum İçeriği Stilleri */
+    .comment-content p {
+        margin: 0;
+        font-size: 16px;
+        color: #333;
+    }
+
+    /* Yorum Sayısı ve Boş Yorum Bilgisi */
+    .comment-info {
+        font-size: 16px;
+        color: #333;
+    }
+
+        .comment-info p {
+            margin: 0;
+        }
+
+</style>
+
+<div class="comment-form">
+    <form asp-controller="Home" asp-action="AddComments" method="post" autocomplete="off">
+        <input type="text" required name="Comment" placeholder="Yorumunuzu yazın...">
+        <input type="hidden" name="PostId" value="@Model.Id" />
+        <button type="submit">Yorum Yap</button>
+    </form>
+</div>
+@if (ViewBag.Count != 0)
+{
+    <p>Yorum Sayısı: @ViewBag.Count</p>
+}else
+{
+    <p>Yorum yapacak ilk kişi siz olun!</p>
+}
+<div class="comments">
+    @foreach (var comment in ViewBag.Comments)
+    {
+        <div class="comment">
+            <div class="comment-header">
+                @if (comment.ProfileImg == null)
+                {
+                    <img src="/uploads/noname-profile.png" alt="Kullanıcı Resmi" class="comment-user-img">
+                }
+                else
+                {
+                <img src="/uploads/@comment.ProfileImg" alt="Kullanıcı Resmi" class="comment-user-img">
+                }
+                <div class="comment-user-info">
+                    <a href="@Url.Action("Profile", "Home", new{Id = comment.UserId})" class="comment-account-name">@comment.Name</a>
+                    @* <span class="comment-account-name">@comment.Name</span> *@
+                    <span class="comment-user">@@@comment.UserName</span>
+                    <span class="comment-date">@comment.CommentDate</span>
+                </div>
+                <div class="comment-options">
+                    <button class="comment-options-btn" onclick="toggleOptionsMenu(this)">⋮</button>
+                    
+                    <div class="comment-options-menu">
+                        @if (Model.UserId == ViewBag.Control || comment.UserId == ViewBag.Control)
+                        {
+                            @if (comment.UserId == ViewBag.Control)
+                            {
+                                <a href="@Url.Action("EditComment", "Admin", new { Id = comment.Id })">Düzenle</a>
+                            }
+                            <a href="@Url.Action("DeleteComment", "Admin", new { Id = comment.Id })" onclick="return confirm('Silmek istediğinize emin misiniz?');">Sil</a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("ReportComment", "Admin", new { Id = comment.Id })">Şikayet Et</a>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="comment-content">
+                <p>@comment.Comment</p>
+            </div>
+        </div>
+    }
+</div>

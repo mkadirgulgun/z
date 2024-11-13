@@ -1,0 +1,115 @@
+﻿@model Post
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f8fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    .edit-comment-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 40px auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+        .edit-comment-container h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+            color: #000000;
+        }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .form-group textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccd6dd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .form-group button,
+        .form-group .cancel-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+    .save-button {
+        background-color: #1da1f2;
+        color: white;
+    }
+
+        .save-button:hover {
+            background-color: #0d95e8;
+        }
+
+    .cancel-button {
+        background-color: #657786;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+    }
+
+        .cancel-button:hover {
+            background-color: #555d67;
+        }
+
+    .edited-comment-preview {
+        margin-top: 20px;
+        border-top: 1px solid #e1e8ed;
+        padding-top: 10px;
+    }
+
+        .edited-comment-preview h2 {
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .edited-comment-preview p {
+            font-size: 14px;
+            color: #000000;
+        }
+
+</style>
+
+<div class="edit-comment-container">
+    <h1>Yorum Düzenle</h1>
+    <form action="/Admin/EditComment" method="post">
+        <input type="hidden" name="Id" value="@Model.Id">
+        <div class="form-group">
+            <label for="comment-detail">Yorum:</label>
+            <textarea  name="Comment" required>@Model.Comment</textarea>
+        </div>
+        <div class="form-group">
+            <input type="hidden" name="PostId" value="@Model.PostId">
+
+            <button type="submit" class="save-button">Kaydet</button>
+            <a href="@Url.Action("Detail", "Home", new { Id = Model.PostId })" class="cancel-button">İptal</a>
+        </div>
+    </form>
+    
+</div>

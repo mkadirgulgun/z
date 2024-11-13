@@ -1,0 +1,401 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\z.bundle.scp.css",
+      "PackagePath": "staticwebassets\\z.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\.png",
+      "PackagePath": "staticwebassets\\uploads\\.png"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\0716c358-ffd1-4877-9320-b2eb2f2909a2.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\0716c358-ffd1-4877-9320-b2eb2f2909a2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\097042d8-5c9d-420a-acba-5003df5a810f.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\097042d8-5c9d-420a-acba-5003df5a810f.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\0b61a61b-c020-440e-8683-a99d8f9820d9.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\0b61a61b-c020-440e-8683-a99d8f9820d9.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\0bdb1438-08af-4807-8f71-4bc01dc8339e.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\0bdb1438-08af-4807-8f71-4bc01dc8339e.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\1380338.png",
+      "PackagePath": "staticwebassets\\uploads\\1380338.png"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\13cd2d38-fb06-4836-acb6-fee2a04c6097.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\13cd2d38-fb06-4836-acb6-fee2a04c6097.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\16b74a84-3c6e-48e2-bd74-1e7d332ac1e0.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\16b74a84-3c6e-48e2-bd74-1e7d332ac1e0.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\1739dfb5-c6b5-493e-be0f-cdd46fd6826a.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\1739dfb5-c6b5-493e-be0f-cdd46fd6826a.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\3d6496dd-90b1-4d83-9027-532f306438e6.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\3d6496dd-90b1-4d83-9027-532f306438e6.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\42cf3683-2956-4985-af83-283fb706e1db.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\42cf3683-2956-4985-af83-283fb706e1db.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\510b1cbe-4345-4f6f-af55-ddf0287bf1ae.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\510b1cbe-4345-4f6f-af55-ddf0287bf1ae.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\589671ec-c429-4f47-bc13-5f5fcc6df257.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\589671ec-c429-4f47-bc13-5f5fcc6df257.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\68b82110-d15a-4196-a007-c854b41c7902.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\68b82110-d15a-4196-a007-c854b41c7902.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\70f95970-e8d3-43ad-a34b-a502a8f3625c.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\70f95970-e8d3-43ad-a34b-a502a8f3625c.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\86201105-ddab-4973-8087-1bb2380f0cac.png",
+      "PackagePath": "staticwebassets\\uploads\\86201105-ddab-4973-8087-1bb2380f0cac.png"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\9b7e2ebb-a52b-4163-97b7-a904a6b9beff.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\9b7e2ebb-a52b-4163-97b7-a904a6b9beff.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\9e086b64-fdcf-4492-973f-5a2ddd964bac.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\9e086b64-fdcf-4492-973f-5a2ddd964bac.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\Screenshot_1.png",
+      "PackagePath": "staticwebassets\\uploads\\Screenshot_1.png"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\WhatsApp Image 2023-04-12 at 19.24.39.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\WhatsApp Image 2023-04-12 at 19.24.39.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\WhatsApp Image 2024-07-24 at 18.40.59.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\WhatsApp Image 2024-07-24 at 18.40.59.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\WhatsApp Image 2024-07-24 at 18.41.00.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\WhatsApp Image 2024-07-24 at 18.41.00.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\a-sleek-and-modern-website-design-inspired-by-x-co-7lfDpm4_SvqH19F8zJqm6A-6ooEqgw7R-C9UvY7uwBaow.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\a-sleek-and-modern-website-design-inspired-by-x-co-7lfDpm4_SvqH19F8zJqm6A-6ooEqgw7R-C9UvY7uwBaow.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\a753b0d6-0967-4192-8dc8-7dd11082f244.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\a753b0d6-0967-4192-8dc8-7dd11082f244.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\b1fdbecc-cc2f-4ad9-8710-32bbbeac560a.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\b1fdbecc-cc2f-4ad9-8710-32bbbeac560a.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\comment.png",
+      "PackagePath": "staticwebassets\\uploads\\comment.png"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\commentt.jpg",
+      "PackagePath": "staticwebassets\\uploads\\commentt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\cover-img.jpg",
+      "PackagePath": "staticwebassets\\uploads\\cover-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\d4bea6f7-db9a-4571-853a-61397637fcf8.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\d4bea6f7-db9a-4571-853a-61397637fcf8.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\ee593673-d771-42a5-9d02-000a9da9c892.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\ee593673-d771-42a5-9d02-000a9da9c892.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\fe671426-d64b-40c5-8954-11eaa400d738.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\fe671426-d64b-40c5-8954-11eaa400d738.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\heart-icon.png",
+      "PackagePath": "staticwebassets\\uploads\\heart-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\logo.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\logo.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\kadir\\Desktop\\works\\SQL\\z\\wwwroot\\uploads\\noname-profile.png",
+      "PackagePath": "staticwebassets\\uploads\\noname-profile.png"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.z.props",
+      "PackagePath": "build\\z.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.z.props",
+      "PackagePath": "buildMultiTargeting\\z.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.z.props",
+      "PackagePath": "buildTransitive\\z.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.z.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
